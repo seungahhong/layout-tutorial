@@ -5,7 +5,7 @@ const Container = styled.header`
   display: flex;
   flex-direction: column;
   background: #1864ab;
-  height: 200px;
+  min-height: 200px;
   padding: 0 10em;
 `;
 

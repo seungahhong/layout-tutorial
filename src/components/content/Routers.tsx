@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import HorizontalAlign from './HorizontalAlign';
 import VerticalAlign from './VerticalAlign';
 
@@ -15,6 +15,7 @@ export default function Routers() {
       <Routes>
         <Route path="/horizontal-align" element={<HorizontalAlign />} />
         <Route path="/verical-align" element={<VerticalAlign />} />
+        <Route path="/" element={<Navigate replace to="/horizontal-align" />} />
       </Routes>
     </Container>
   );
