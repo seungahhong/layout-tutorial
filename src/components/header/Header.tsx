@@ -44,10 +44,10 @@ export default function Header() {
     <Container>
       <Title>Layout Tutorial</Title>
       <Nav>
-        <Link to="horizontal-align">horizontal-alignment</Link>
-        <Link to="negative-margin">negative-margin</Link>
-        <Link to="float-layout">float-layout</Link>
-        <Link to="verical-align">verical-align</Link>
+        <Link to="/horizontal-align">horizontal-alignment</Link>
+        <Link to="/negative-margin">negative-margin</Link>
+        <Link to="/float-layout">float-layout</Link>
+        <Link to="/verical-align">verical-align</Link>
       </Nav>
     </Container>
   );
