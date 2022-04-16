@@ -1,5 +1,9 @@
-import styled from '@emotion/styled';
+import { Container, Title } from '../core/Content';
 
 export default function VerticalAlign() {
-  return <div>VerticalAlign</div>;
+  return (
+    <Container>
+      <Title>vetical-align</Title>
+    </Container>
+  );
 }

@@ -3,6 +3,13 @@
 // /** @jsx jsx */
 import { jsx, css } from '@emotion/react';
 import styled from '@emotion/styled';
+import {
+  Title,
+  Grid as GridCore,
+  GridItem as GridItemCore,
+  Container as ContainerCore,
+  Description,
+} from '../core/Content';
 
 type IGridItemProps = {
   type: string;
@@ -10,38 +17,22 @@ type IGridItemProps = {
   float?: string;
 };
 
-const Container = styled.div`
+const Container = styled(ContainerCore)`
   display: flex;
   margin: 0 20px;
 `;
 
-const Title = styled.h4`
-  margin: 10px 0;
-  font-size: 20px;
-  font-weight: 700;
-`;
-
-const Grid = styled.div`
-  margin-top: 10px;
+const Grid = styled(GridCore)`
   background-color: white;
 `;
 
-const GridItem = styled.div<IGridItemProps>`
-  display: ${(props) => (props.display ? props.display : 'block')};
-  float: ${(props) => props.float && props.float};
-  width: 100px;
-  height: 100px;
-
+const GridItem = styled(GridItemCore)<IGridItemProps>`
   background-color: ${(props) =>
     props.type === 'first'
       ? 'orange'
       : props.type === 'second'
       ? 'red'
       : 'yellow'};
-`;
-
-const Description = styled.div`
-  font-weight: 600;
 `;
 
 export default function HorizontalAlign() {
@@ -155,7 +146,7 @@ export default function HorizontalAlign() {
             </p>
             <p>
               {
-                'float 속성은 가로 배치를 위한 속성은 아니다. 컨텐츠가 어우러지게끔 처리, 띄워져있음'
+                'float 속성은 가로 배치를 위한 속성은 아니다. 글자(인라인박스)를 밀어서 float 아래에 인라인박스가 올 수 없게 처리됨'
               }
             </p>
           </Description>
