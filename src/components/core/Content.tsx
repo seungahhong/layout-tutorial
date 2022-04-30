@@ -4,7 +4,7 @@
 import styled from '@emotion/styled';
 
 export type IGridItemProps = {
-  type: string;
+  type?: string;
   display?: string;
   float?: string;
 };
@@ -26,10 +26,11 @@ export const Grid = styled.div`
 export const GridItem = styled.div<IGridItemProps>`
   display: ${(props) => (props.display ? props.display : 'block')};
   float: ${(props) => props.float && props.float};
-  width: 100px;
+  min-width: 100px;
   height: 100px;
 `;
 
 export const Description = styled.div`
+  line-height: 20px;
   font-weight: 600;
 `;

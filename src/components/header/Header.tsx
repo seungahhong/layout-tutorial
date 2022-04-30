@@ -19,6 +19,7 @@ const Title = styled.h1`
 
 const Nav = styled.nav`
   display: flex;
+  overflow: auto;
   flex: 1;
   align-items: flex-end;
 `;
@@ -47,6 +48,7 @@ export default function Header() {
         <Link to="/horizontal-align">horizontal-alignment</Link>
         <Link to="/negative-margin">negative-margin</Link>
         <Link to="/float-layout">float-layout</Link>
+        <Link to="/transition">transition</Link>
         <Link to="/verical-align">verical-align</Link>
       </Nav>
     </Container>
