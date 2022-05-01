@@ -27,7 +27,7 @@ const Content1 = styled.div`
     left: 10px;
     width: 100px;
     height: 100px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 3px solid #5c940d;
     transition-duration: 2s;
 
@@ -42,7 +42,7 @@ const Content1 = styled.div`
     right: 10px;
     width: 100px;
     height: 100px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 3px solid #d9480f;
     transition-duration: 2s;
 
@@ -57,7 +57,7 @@ const Content1 = styled.div`
     left: 100px;
     width: 100px;
     height: 100px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 3px solid #5c940d;
     transition-duration: 2s;
 
@@ -72,7 +72,7 @@ const Content1 = styled.div`
     right: 100px;
     width: 100px;
     height: 100px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 3px solid #d9480f;
     transition-duration: 2s;
 
@@ -95,14 +95,16 @@ const GridItem = styled(GridItemCore)`
 
 const Circle = styled.div<CircleType>`
   background: blue;
-  border-radius: 100%;
   width: 100px;
   height: 100px;
   transition-duration: 2s;
   transition-timing-function: ${(props) => props.transitionTiming};
 
   &.hover {
+    background: red;
     margin-left: 300px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 `;
 

@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 const Container = styled.header`
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: #1864ab;
   min-height: 200px;
   padding: 0 10em;
@@ -48,7 +51,7 @@ export default function Header() {
         <Link to="/horizontal-align">horizontal-alignment</Link>
         <Link to="/negative-margin">negative-margin</Link>
         <Link to="/float-layout">float-layout</Link>
-        <Link to="/transition">transition</Link>
+        <Link to="/animation">animation</Link>
         <Link to="/verical-align">verical-align</Link>
       </Nav>
     </Container>

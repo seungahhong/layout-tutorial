@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 import { Navigate, Route, Routes } from 'react-router-dom';
+import Animation from './Animation';
 import FloatLayout from './FloatLayout';
 import HorizontalAlign from './HorizontalAlign';
 import NegativeMargin from './NegativeMargin';
-import Transition from './Transition';
 import VerticalAlign from './VerticalAlign';
 
 const Container = styled.main`
@@ -19,7 +19,7 @@ export default function Routers() {
         <Route path="/horizontal-align" element={<HorizontalAlign />} />
         <Route path="/float-layout" element={<FloatLayout />} />
         <Route path="/negative-margin" element={<NegativeMargin />} />
-        <Route path="/transition" element={<Transition />} />
+        <Route path="/animation" element={<Animation />} />
         <Route path="/verical-align" element={<VerticalAlign />} />
         <Route path="/" element={<Navigate replace to="/horizontal-align" />} />
       </Routes>
